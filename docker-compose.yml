@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  mywebapi:
+    image: ${DOCKER_REGISTRY-}acmecorpservicesapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=DESKTOP-034ILFT;Database=AcmeCorp;User=sa;Password=123; # replace with your connection string
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: 123 # replace with your password
+      MSSQL_PID: Express
+    ports:
+      - 1433:1433

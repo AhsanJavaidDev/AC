@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>AcmeCorp.Infra.CrossCutting.Bus</RootNamespace>
+    <AssemblyName>AcmeCorp.Infra.CrossCutting.Bus</AssemblyName>
+    <AnalysisLevel>5</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcmeCorp.Domain.Core\AcmeCorp.Domain.Core.csproj" />
+  </ItemGroup>
+
+</Project>

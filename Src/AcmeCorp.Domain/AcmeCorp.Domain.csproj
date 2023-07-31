@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>AcmeCorp.Domain</RootNamespace>
+    <AssemblyName>AcmeCorp.Domain</AssemblyName>
+    <AnalysisLevel>5</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcmeCorp.Infra.CrossCutting.Bus\AcmeCorp.Infra.CrossCutting.Bus.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Refit.HttpClientFactory" Version="6.0.38" />
+  </ItemGroup>
+
+</Project>

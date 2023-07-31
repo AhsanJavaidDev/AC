@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>AcmeCorp.Application</RootNamespace>
+    <AssemblyName>AcmeCorp.Application</AssemblyName>
+    <AnalysisLevel>5</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcmeCorp.Domain\AcmeCorp.Domain.csproj" />
+    <ProjectReference Include="..\AcmeCorp.Infra.Data\AcmeCorp.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>

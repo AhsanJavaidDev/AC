@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>AcmeCorp.Infra.CrossCutting.IoC</RootNamespace>
+    <AssemblyName>AcmeCorp.Infra.CrossCutting.IoC</AssemblyName>
+    <AnalysisLevel>5</AnalysisLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AcmeCorp.Application\AcmeCorp.Application.csproj" />
+    <ProjectReference Include="..\AcmeCorp.Domain\AcmeCorp.Domain.csproj" />
+    <ProjectReference Include="..\AcmeCorp.Infra.CrossCutting.Identity\AcmeCorp.Infra.CrossCutting.Identity.csproj" />
+    <ProjectReference Include="..\AcmeCorp.Infra.Data\AcmeCorp.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
